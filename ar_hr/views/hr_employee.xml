@@ -1,0 +1,30 @@
+<odoo>
+    <record id="ar_hr_employee_form" model="ir.ui.view">
+        <field name="name">hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="hr_id" string="employee code"/>
+                <field name="slack_id" string="Slack ID"/>
+            </xpath>
+            <xpath expr="//page[@name='hr_settings']" position="after">
+                <page string="Desknets" name="desknets">
+                  <group>
+                        <field name="dn_id" string="Desknets ID"/>
+                        <field name="dn_del_flag" string="elete Flag"/>
+                        <field name="dn_admin" string="Admin"/>
+                  </group>
+
+                </page>
+                <page string="King of Time" name="kingoftime">
+                  <group>
+                        <field name="kt_id" string="King of TIme ID"/>
+                  </group>
+
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

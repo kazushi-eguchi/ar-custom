@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ar_hr_ar_hr,ar_hr.ar_hr,model_ar_hr_ar_hr,base.group_user,1,1,1,1
